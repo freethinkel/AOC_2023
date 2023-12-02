@@ -61,9 +61,7 @@ const first = () => {
 
     const value = gameVariants.map((games) => {
       return games.split(",").reduce((arr, curr) => {
-        console.log(curr.trim() + "___");
         const [number, color] = curr.trim().split(" ");
-        console.log(number, "__", color, arr);
         arr[color] = Number(number);
 
         return arr;
