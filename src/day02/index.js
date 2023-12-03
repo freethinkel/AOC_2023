@@ -85,5 +85,5 @@ const first = () => {
   console.log(value);
 };
 
-// first();
-second();
+first();
+// second();
