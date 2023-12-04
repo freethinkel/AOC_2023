@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node ./src/day03"
+    "dev": "node ./src/day04"
   },
   "keywords": [],
   "author": "freethinkel",
