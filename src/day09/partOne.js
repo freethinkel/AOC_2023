@@ -12,7 +12,7 @@ const main = () => {
 const computeNextValueForLine = (line) => {
   const newLines = [line];
   while (true) {
-    const newLine = getBetweenValues(newLines.at(-1));
+    const newLine = getDiffs(newLines.at(-1));
     newLines.push(newLine);
     if (newLine.every((e) => e === 0)) {
       break;
@@ -22,7 +22,7 @@ const computeNextValueForLine = (line) => {
   return newLines.reduce((acc, curr) => acc + curr.at(-1), 0);
 };
 
-const getBetweenValues = (line) => {
+const getDiffs = (line) => {
   const newLine = [];
 
   for (let i = 1; i < line.length; i++) {
